@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "calc-script",
-      fileName: "calc-script",
+      name: "index",
+      fileName: "index",
     },
   },
   plugins: [dts()],

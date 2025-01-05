@@ -1,6 +1,6 @@
 {
   "name": "css-calc-script",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A library for building reusable and maintainable CSS calc() expressions with TypeScript.",
   "author": "Juchok Juk.",
   "license": "MIT",
