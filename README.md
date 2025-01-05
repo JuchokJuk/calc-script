@@ -88,5 +88,5 @@ abs(value)
 sign(value)
 
 env(name, ?fallback)
-var(name, ?fallback)
+variable(name, ?fallback)
 ```
