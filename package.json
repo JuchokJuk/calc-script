@@ -1,6 +1,6 @@
 {
   "name": "css-calc-script",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A library for building reusable and maintainable CSS calc() expressions with TypeScript.",
   "author": "Juchok Juk.",
   "license": "MIT",
@@ -14,13 +14,13 @@
   },
   "keywords": ["css", "calc", "typescript"],
   "type": "module",
-  "main": "./dist/calc-script.umd.cjs",
-  "module": "./dist/calc-script.js",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/calc-script.js",
-      "require": "./dist/calc-script.umd.cjs"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
     }
   },
   "files": [

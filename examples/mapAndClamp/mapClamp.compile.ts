@@ -1,5 +1,5 @@
-import { compile } from "../src/index.ts";
-import { mapClamp } from "./utils/mapClamp.ts";
+import { compile } from "../../src/index.ts";
+import { mapClamp } from "../utils/mapClamp.ts";
 
 export const calcString = compile(mapClamp)("--value", "--min", "--max", 0, "--width");
 /*
