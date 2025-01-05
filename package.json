@@ -1,0 +1,53 @@
+{
+  "name": "calc-script",
+  "version": "0.0.1",
+
+
+
+  "description": "A library for building reusable and maintainable CSS calc() expressions with TypeScript.",
+  "author": "Juchok Juk.",
+  "license": "MIT",
+  "homepage": "https://github.com/JuchokJuk/calc-script.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuchokJuk/calc-script.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JuchokJuk/calc-script/issues"
+  },
+  "keywords": ["css", "calc", "typescript"],
+
+
+
+
+
+  "type": "module",
+
+  "main": "./dist/calc-script.umd.cjs",
+  "module": "./dist/calc-script.js",
+  "types": "./dist/index.d.ts",
+
+  "exports": {
+    ".": {
+      "import": "./dist/calc-script.js",
+      "require": "./dist/calc-script.umd.cjs"
+    }
+  },
+
+  "files": [
+    "dist"
+  ],
+
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vite-plugin-dts": "^4.4.0"
+  }
+}
