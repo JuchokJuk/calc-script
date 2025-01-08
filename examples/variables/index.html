@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc Script | variables</title>
+</head>
+
+<body>
+    <a href="/examples/minimal/">Minimal</a>
+    <a href="/examples/variables/">Variables</a>
+    <a href="/examples/combination/">Combination</a>
+
+    <h1>Variables</h1>
+
+    <pre>
+import { useCalc, CSNode } from '../../src/index.ts';
+
+function summ(a: CSNode, b: CSNode) {
+    return a.add(b);
+}
+
+export const calcSumm = useCalc(summ)("--x", "--y");
+    </pre>
+
+
+    <p>will be compiled to</p>
+    <pre>
+export const calcSumm = "calc(var(--x) + var(--y))";
+    </pre>
+    <script type="module" src="./index.ts"></script>
+</body>
+
+</html>

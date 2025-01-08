@@ -1,5 +1,5 @@
-import { CSNode } from "./CalcScript.ts";
+import { CSNode } from './node.ts';
 
 export function zero(expression: CSNode) {
-  return parseFloat(expression.value as string) === 0;
+	return parseFloat(expression.value) === 0;
 }

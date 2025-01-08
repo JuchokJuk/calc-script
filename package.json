@@ -1,40 +1,52 @@
 {
-  "name": "css-calc-script",
-  "version": "0.0.6",
-  "description": "A library for building reusable and maintainable CSS calc() expressions with TypeScript.",
-  "author": "Juchok Juk.",
-  "license": "MIT",
-  "homepage": "https://github.com/JuchokJuk/calc-script.git",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JuchokJuk/calc-script.git"
-  },
-  "bugs": {
-    "url": "https://github.com/JuchokJuk/calc-script/issues"
-  },
-  "keywords": ["css", "calc", "typescript"],
-  "type": "module",
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@types/node": "^22.10.5",
-    "typescript": "~5.6.2",
-    "vite": "^6.0.5",
-    "vite-plugin-dts": "^4.4.0"
-  }
+	"name": "css-calc-script",
+	"version": "0.0.7",
+	"description": "A library for building reusable and maintainable CSS calc() expressions with TypeScript.",
+	"author": "Juchok Juk.",
+	"license": "MIT",
+	"homepage": "https://github.com/JuchokJuk/calc-script.git",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JuchokJuk/calc-script.git"
+	},
+	"bugs": {
+		"url": "https://github.com/JuchokJuk/calc-script/issues"
+	},
+	"keywords": [
+		"css",
+		"calc",
+		"typescript"
+	],
+	"type": "module",
+	"main": "./dist/index.umd.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.umd.cjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint ."
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.5",
+		"typescript": "~5.6.2",
+		"vite": "^6.0.5",
+		"vite-plugin-dts": "^4.4.0",
+		"@eslint/compat": "^1.2.3",
+		"eslint": "^9.7.0",
+		"eslint-config-prettier": "^9.1.0",
+		"globals": "^15.0.0",
+		"prettier": "^3.3.2",
+		"typescript-eslint": "^8.0.0"
+	}
 }

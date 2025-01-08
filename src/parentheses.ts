@@ -1,13 +1,13 @@
-import { CSNode } from "./CalcScript.ts";
+import { node, CSNode } from './node.ts';
 
 export function wrap(expression: string) {
-  return CSNode(`(${expression})`, "parentheses");
+	return node(`(${expression})`, 'parentheses');
 }
 
 export function unwrap(expression: CSNode) {
-  if (expression.nodeType === "parentheses") {
-    return expression.value.slice(1, -1);
-  } else {
-    return expression.value;
-  }
+	if (expression.type === 'parentheses') {
+		return expression.value.slice(1, -1);
+	} else {
+		return expression.value;
+	}
 }

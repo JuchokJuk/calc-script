@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc Script | combination</title>
+</head>
+
+<body>
+    <a href="/examples/minimal/">Minimal</a>
+    <a href="/examples/variables/">Variables</a>
+    <a href="/examples/combination/">Combination</a>
+
+    <h1>Combination</h1>
+
+    <pre>
+translate: 0 calc(((((sin(var(--t) + round(down, var(--x) - var(--t), 3)) + 1) / (1 + 1)) * (150 - 50)) + 50) * 1px);
+    </pre>
+
+    <div id="app"></div>
+    <script type="module" src="./index.ts"></script>
+</body>
+
+</html>
