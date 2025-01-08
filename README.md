@@ -1,4 +1,4 @@
-# CalcScript: A library for building reusable and maintainable CSS `calc()` expressions with TypeScript.
+# [CalcScript](https://www.npmjs.com/package/css-calc-script): A library for building reusable and maintainable CSS `calc()` expressions with TypeScript.
 
 CalcScript is a library for crafting complex CSS calc() expressions. It simplifies working with intricate expressions by allowing developers to break them into smaller, reusable parts using JavaScript. The library is designed for build-time use with the [`vite-plugin-compile-time`](https://github.com/egoist/vite-plugin-compile-time), ensuring no additional code is shipped to the final bundle.
 
@@ -15,6 +15,8 @@ CalcScript is a library for crafting complex CSS calc() expressions. It simplifi
 ---
 
 ## Examples
+
+Install with `npm i css-calc-script`.
 
 Use `.compile.ts` extension with [`vite-plugin-compile-time`](https://github.com/egoist/vite-plugin-compile-time) for constructing `calc()` expressions at build time
 
